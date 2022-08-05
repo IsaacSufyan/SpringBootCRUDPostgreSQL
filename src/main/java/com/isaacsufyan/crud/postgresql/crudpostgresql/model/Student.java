@@ -1,7 +1,6 @@
 package com.isaacsufyan.crud.postgresql.crudpostgresql.model;
 
 import com.fasterxml.jackson.annotation.JsonFilter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -13,9 +12,8 @@ import javax.validation.constraints.Size;
 @Entity
 @Setter
 @Getter
-@Table(name = "employees")
-@JsonFilter("filter")
-public class Employee {
+@Table(name = "students")
+public class Student {
 
 
     @Id
